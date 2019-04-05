@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: 此时此刻丑小鸭正在
+permalink: /关于丑小鸭/
 ---
 
-长身体ing~
+长身体 :)
 
-### More Information
+### 当你遇到困难时，丑小鸭想对你说
 
-Just do it.(jiu shi dui ta) :)
+Just do it.   (jiu shi dui ta)
 
-### Contact me
+### 丑小鸭的 Gmail
 
 [sunbingjian98@gmail.com](mailto:email@domain.com)
