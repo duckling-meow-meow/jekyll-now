@@ -1,10 +1,15 @@
 ---
 layout: post
-title: You're up and running!
+title: 开始了
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+第一篇博客，就写一个语录吧。警醒、励志。
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+所有的问题都是时间的问题，所有的烦恼都是自寻烦恼。
+感谢太阳又升起，继续燃烧我的梦想。
+有些页面，不努力就永远都翻不过去。
+青春只有一次，别让自己过得不精彩。
+每天告诉自己一次：我真的很不错。
+与其渴望关怀，不如一个人精彩。
+走过这片泥泞，我在那里等你。
+火把倒下，火焰依然向上。
