@@ -8,7 +8,7 @@ Hey there!Hope you have fun!
 
 ### More Information About Me
 
-like to eat and eat
+* like to eat and eat
 
 ### Gmail
 
