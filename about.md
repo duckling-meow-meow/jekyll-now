@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Contact me
-permalink: /About/
+title: About
+permalink: /about/
 ---
 
-Hey!Welcome to meow-meow-duckling's blog,and don't hesitate to contact me if you have any question!
+Hey there!Hope you have fun!
 
 ### Gmail
 
