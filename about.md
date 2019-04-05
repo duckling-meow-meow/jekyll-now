@@ -2,6 +2,7 @@
 layout: page
 title: Contact me
 permalink: /About/
+---
 
 ### Gmail
 
