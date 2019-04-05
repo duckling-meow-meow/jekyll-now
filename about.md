@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Hey there!Hope you have fun!
+Hey there! Hope you have fun!
 
 ### More Information About Me
 
-* like to eat and eat
+* A girl who will be a farmer of the new era.
+* Like to buy buy buy and eat eat eat.
+* I am still growing up...
 
 ### Gmail
 
