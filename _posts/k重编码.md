@@ -1,3 +1,8 @@
+---
+layout: post
+title: k重编码
+---
+
 # k重编码
 
 ## 问题描述
