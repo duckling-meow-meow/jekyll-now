@@ -1,0 +1,19 @@
+```
+layout: post
+title: 字符串的输入输出
+
+```
+
+## c++示例代码
+
+*定义一个字符数组，“scanf”字符数组即可。*
+
+```c++
+//输入字符串
+char ZiFuChuan[20];
+scanf("%s",&ZiFuChuan);
+//输出字符串
+string ZiFuChuan;
+printf("%s",ZiFuChuan.c_str());//c_str()是string类中的函数，它返回当前字符串的首字符地址
+```
+
