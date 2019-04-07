@@ -1,0 +1,78 @@
+# k重编码
+
+## 问题描述
+
+有一篇文章，文章包含 n 种单词，单词的编号从 1 至 n，第 i 种单词的出现次数为 w<sub>i</sub>。
+
+现在，我们要用一个 k 进制串 s<sub>i</sub>来替换第 i 种单词，使其满足如下要求：对于任意的 1 ≤ i , j ≤ n , i ≠ j，都有 s<sub>i</sub> 不是 s<sub>j</sub>的前缀。（这个要求是为了避免二义性）
+
+你的任务是对每个单词选择合适的 s<sub>i</sub>，使得替换后的文章总长度（定义为所有单词**出现次数**与**替换它的k进制串的长度**乘积的总和）最小。求这个最小长度。和最大的s<sub>i</sub>。
+
+字符串 S<sub>1</sub>（不妨假设长度为 n）被称为字符串 S<sub>2</sub>的前缀，当且仅当：S<sub>2</sub> 的长度不小于 n，且 S<sub>1</sub> 与 S<sub>2</sub> 前 n 个字符组组成的字符串完全相同。
+
+## 输入格式
+
+第一行两个整数n，k，分别表示单词种数和k进制串。
+
+第2行到第n+1行，第i+1行包含一个正整数w<sub>i</sub>，表示第i种单词出现的次数。
+
+## 输出格式
+
+输出两行，每行一个整数，分别表示整片文章重编码后的最短长度，和单个字符最长的编码长度。
+
+## 样例输入
+
+4 2
+
+1 1 2 2
+
+## 样例输出
+
+12 2
+
+## c++代码
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef pair<ll, int> li;
+priority_queue<li, vector<li>, greater<li>> q;
+
+int main() {
+	int n, k;
+	scanf("%d%d", &n, &k);
+	vector<li> c;
+	c.resize(n);
+	for (int i = 0; i < n; ++i) {
+		ll x;
+		scanf("%lld", &x);
+		c[i].first = x;
+		c[i].second = 0;
+	}
+	for (int i = 0; i < n; ++i)
+		q.push(c[i]);
+	if (k != 2) {
+		int r = n % (k - 1) == 1 ? 0 : k - n % (k - 1);
+		while (r--)
+			q.push(make_pair(0, 0));
+	}
+	ll sum = 0;
+	while (q.size() > 1) {
+		ll newe=0;
+		int height=0;
+		for(int i=0;i<k;++i){
+			if(q.top().first!=0)
+				height = max(height, q.top().second);
+			newe += q.top().first;
+			q.pop();
+		}
+		q.push(make_pair(newe,height+1));
+		sum += newe;
+	}
+	printf("%lld\n", sum);
+	printf("%d\n", q.top().second);
+	return 0;
+}
+```
