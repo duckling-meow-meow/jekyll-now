@@ -1,9 +1,25 @@
 ---
 layout: post
-title: 开始了
+title: 能否成功
 ---
 
-嘿嘿，第一篇博客来啦！
+## 问题描述
 
-这将会是一个记录算法学习的一个博客主页哦。开心的学习，开心的记录！
+定义一个函数，判断你的人生能否获得成功。
 
+## 解题思路
+
+成功需要野心，还需要努力，并且努力要配得上野心。
+
+## c++代码
+
+```
+bool ifsucceed(int ambition,int pains){
+  if(ambition<=0||pains<=0)
+    return 0;
+  else if(pains<ambition)
+    return 0;
+  else
+    return 1;
+}
+```
