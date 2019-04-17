@@ -1,25 +1,6 @@
 ---
 layout: post
-title: 能否成功
+title: 坚持
 ---
 
-## 问题描述
-
-定义一个函数，判断你的人生能否获得成功。
-
-## 解题思路
-
-成功需要野心，还需要努力，并且努力要配得上野心。
-
-## c++代码
-
-```
-bool ifsucceed(int ambition,int pains){
-  if(ambition<=0||pains<=0)
-    return 0;
-  else if(pains<ambition)
-    return 0;
-  else
-    return 1;
-}
-```
+希望自己可以很快成长为一个可以帮助别人解决各种问题的大牛，下一次也可以很自信地申请社区助教，坚持，加油！
